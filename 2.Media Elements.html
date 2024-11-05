@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Elements</title>
+  </head>
+  <body>
+    <!-- ====== audio ====== -->
+    <!-- 
+        Thẻ này <audio>được sử dụng để nhúng nội dung âm thanh vào tài liệu, chẳng hạn như nhạc hoặc các luồng âm thanh khác.
+        Thẻ <audio>chứa một hoặc nhiều <source>thẻ có nguồn âm thanh khác nhau. Trình duyệt sẽ chọn nguồn đầu tiên mà nó hỗ trợ.
+        Văn bản giữa các thẻ <audio>và </audio> sẽ chỉ được hiển thị trên các trình duyệt không hỗ trợ <audio>phần tử này.
+        Có ba định dạng âm thanh được hỗ trợ trong HTML: MP3, WAV và OGG.
+     -->
+    <audio controls>
+      <source src="audio/adio-1.aac" type="audio/aac" />
+      <source src="horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- ==== video ========= -->
+    <!-- Thẻ này <video>được sử dụng để nhúng nội dung video vào tài liệu, 
+        chẳng hạn như đoạn phim hoặc các luồng video khác. -->
+
+    <video width="320" height="240" controls>
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+      <source src="movie.ogg" type="video/ogg" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- === canvas -->
+    <!-- Thẻ này <canvas>được sử dụng để vẽ đồ họa một cách nhanh 
+        chóng thông qua tập lệnh (thường là JavaScript). 
+    -->
+
+    <canvas
+      id="myCanvas"
+      width="300"
+      height="150"
+      style="border: 1px solid grey"
+    ></canvas>
+  </body>
+</html>
