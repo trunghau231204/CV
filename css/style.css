@@ -1,0 +1,88 @@
+/* ========body ======== */
+body {
+  width: 500px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+/* =========header======= */
+.header {
+}
+
+.header__title {
+  text-align: center;
+  font-size: 3rem;
+  color: red;
+}
+
+.header-list {
+  display: flex;
+  gap: 20px;
+}
+
+/* === about ======= */
+.about__img {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* ===== experience ======= */
+.experience__table {
+  margin-top: 10px;
+}
+/* =========== contact ========= */
+.contact {
+  padding: 10px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__input,
+.contact__textarea {
+  width: 300px;
+}
+
+.contact__button {
+  background-color: #ffffff;
+  color: #000;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  font-size: 17px;
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+.contact__button:hover {
+  background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));
+  color: #ffffff;
+}
+
+/* ==== footer */
+.footer {
+  padding: 30px;
+  background-color: lightgray;
+}
+
+.footer-list {
+  display: flex;
+  gap: 20px;
+}

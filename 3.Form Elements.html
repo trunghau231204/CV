@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Form Elements</title>
+  </head>
+  <body>
+    <!-- =========== form -->
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+      <label for="username">username:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="nhap tai khoan"
+        minlength="6"
+        maxlength="11"
+        required
+      /><br />
+
+      <label for="password">password:</label>
+      <input type="password" id="password" /><br />
+
+      <label for="email">email:</label>
+      <input type="email" id="eamil" placeholder="nhap email" /><br />
+
+      <label for="phone">phone #</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="1234-567-890"
+        pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+      /><br />
+
+      <label for="bday">birthday:</label>
+      <input type="date" id="bday" /><br />
+
+      <label for="quantity">quantity: </label>
+      <input type="number" id="quantity" min="0" max="99" value="1" /><br />
+
+      <label for="title">title:</label>
+      <label for="Nguyen.">Nguyen.</label>
+      <input type="radio" id="Nguyen." value="Nguyen." name="title" />
+      <label for="Lam.">Lam.</label>
+      <input type="radio" id="Lam." value="Lam." name="title" />
+      <label for="Huynh.">Huynh.</label>
+      <input type="radio" id="Huynh." value="Huynh." name="title" /> <br />
+
+      <label for="payment">payment:</label>
+      <select id="payment">
+        <option value="MB">MBBank</option>
+        <option value="VT">VietTinBank</option>
+        <option value="SC">SacomBank</option></select
+      ><br />
+
+      <label for="subscribes">subscribes:</label>
+      <input type="checkbox" id="subscribes" /><br />
+
+      <label for="comment">comment:</label>
+      <textarea id="comment" rows="3" cols="25"></textarea><br />
+
+      <label for="file">file:</label>
+      <input type="file" id="file" accept="image/png, image/jpeg" /><br />
+
+      <input type="reset" />
+      <input type="submit" value="Gui" /> <br />
+    </form>
+  </body>
+</html>
